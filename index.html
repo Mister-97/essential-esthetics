@@ -558,12 +558,12 @@ footer{background:var(--cacao);color:var(--cream);padding:90px 0 0}
         "latitude": 39.9168,
         "longitude": -82.8743
       },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-        "opens": "11:00",
-        "closes": "19:30"
-      },
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "10:00", "closes": "15:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday"], "opens": "13:00", "closes": "19:30"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday"], "opens": "10:30", "closes": "13:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "11:00", "closes": "19:30"}
+      ],
       "sameAs": [
         "https://www.instagram.com/columbusbrazilianwax/"
       ],
@@ -1018,8 +1018,13 @@ footer{background:var(--cacao);color:var(--cream);padding:90px 0 0}
     <p>Appointments are limited and by reservation only. Book online in under a minute, or call us at <a href="tel:+16147784456" style="border-bottom:1px solid var(--peach-deep)">(614) 778-4456</a> and we will find you a time.</p>
     <a href="https://essentlesthetics.as.me/schedule/f0393093" target="_blank" rel="noopener" class="btn btn-book">Book a Service <span class="arr">→</span></a>
     <div class="book-hours">
-      <span>Hours <b>11am–7:30pm</b></span>
-      <span>Bookings <b>By appointment only</b></span>
+      <span>Monday <b>10am–3pm</b></span>
+      <span>Tuesday <b>1–7:30pm</b></span>
+      <span>Wednesday <b>1–7:30pm</b></span>
+      <span>Thursday <b>Closed</b></span>
+      <span>Friday <b>10:30am–1pm</b></span>
+      <span>Saturday <b>10:30am–1pm</b></span>
+      <span>Sunday <b>11am–7:30pm</b></span>
     </div>
   </div>
 </section>
