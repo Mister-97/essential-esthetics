@@ -648,6 +648,8 @@ footer{background:var(--cacao);color:var(--cream);padding:90px 0 0}
   ]
 }
 </script>
+  <script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)}</script>
+  <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
 
@@ -1157,6 +1159,13 @@ function startQuotes(){
   qTimer = setInterval(() => showQuote((qi + 1) % slides.length), 6000);
 }
 startQuotes();
+</script>
+<script>
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest && e.target.closest('a[href*="as.me"]');
+    if (!a || !window.va) return;
+    window.va("event", { name: "Book click", data: { label: (a.textContent || "").trim().replace(/\s+/g, " ").slice(0, 40) } });
+  });
 </script>
 </body>
 </html>
