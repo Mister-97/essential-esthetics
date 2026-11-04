@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232B1E16'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-style='italic' font-size='34' fill='%23C97A56' text-anchor='middle'%3EEe%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232B1E16'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-style='italic' font-size='34' fill='%23FF7F7A' text-anchor='middle'%3EEe%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Karla:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -46,7 +46,7 @@
 <style>
 :root{
   --cream:#F7F0E6;--cream-deep:#F0E5D4;--cacao:#2B1E16;--cacao-soft:#4A382B;
-  --peach:#C97A56;--peach-deep:#A95F3F;--blush:#E8C9B4;--line:rgba(43,30,22,.16);
+  --peach:#FF7F7A;--peach-deep:#E5605B;--blush:#F9B4A8;--line:rgba(43,30,22,.16);
   --serif:"Fraunces",Georgia,serif;--sans:"Karla",Helvetica,sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
@@ -60,8 +60,8 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.06}
 .eyebrow{font-family:var(--sans);font-size:11.5px;letter-spacing:.32em;text-transform:uppercase;font-weight:600;color:var(--peach-deep);display:flex;align-items:center;gap:14px;margin-bottom:22px}
 .eyebrow::before{content:"";width:28px;height:1px;background:var(--peach-deep)}
 .btn{display:inline-flex;align-items:center;gap:12px;font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;padding:17px 36px;border-radius:999px;border:1px solid var(--cacao);transition:.3s;cursor:pointer;white-space:nowrap}
-.btn-book{background:linear-gradient(135deg,#D68E66 0%,var(--peach) 45%,var(--peach-deep) 100%);border-color:transparent;color:var(--cream);box-shadow:0 10px 24px -10px rgba(169,95,63,.55)}
-.btn-book:hover{transform:translateY(-2px);box-shadow:0 16px 32px -12px rgba(169,95,63,.7)}
+.btn-book{background:linear-gradient(135deg,#FF9A95 0%,var(--peach) 45%,var(--peach-deep) 100%);border-color:transparent;color:var(--cream);box-shadow:0 10px 24px -10px rgba(229,96,91,.55)}
+.btn-book:hover{transform:translateY(-2px);box-shadow:0 16px 32px -12px rgba(229,96,91,.7)}
 .btn-ghost{background:transparent}
 .btn-ghost:hover{background:var(--cacao);color:var(--cream)}
 /* nav */
@@ -81,7 +81,7 @@ section{padding:100px 0}
 .bg-dark{background:var(--cacao);color:var(--cream)}
 /* hero */
 .hero{min-height:88vh;display:flex;flex-direction:column;justify-content:flex-end;padding:140px 6vw 60px;position:relative;overflow:hidden}
-.hero-bg{position:absolute;inset:0;z-index:-1;background:radial-gradient(800px 500px at 82% 10%, rgba(232,201,180,.5), transparent 65%),radial-gradient(600px 400px at 8% 85%, rgba(201,122,86,.15), transparent 60%),var(--cream)}
+.hero-bg{position:absolute;inset:0;z-index:-1;background:radial-gradient(800px 500px at 82% 10%, rgba(249,180,168,.5), transparent 65%),radial-gradient(600px 400px at 8% 85%, rgba(255,127,122,.15), transparent 60%),var(--cream)}
 .hero-img{position:absolute;right:0;top:80px;bottom:60px;z-index:-1;width:min(520px,40vw);border-radius:300px 0 0 28px;overflow:hidden}
 .hero-img img{width:100%;height:100%;object-fit:cover;object-position:top center}
 .hero h1{font-size:clamp(48px,8vw,118px);letter-spacing:-.02em;max-width:13ch;margin-bottom:28px}
